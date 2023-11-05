@@ -41,3 +41,19 @@ function isRainbow(colors: string) :string{
 
 console.log(isRainbow("marrón"));
 console.log(isRainbow("azul"));
+
+// Reto 5: realizar una función que devuelva la suma del numero de caracteres de las palabras de un array
+
+let myArray = ["dsakjiou", "jadsygfdhlkd", "ghajksjiohbjk", "haujsdhasbdui"]
+
+
+function add(myWords): number{
+    let numLetters = 0;
+    for(let i = 0; i < myArray.length; i++){
+    numLetters = numLetters + myArray[i].length
+    } 
+    return numLetters;
+}
+
+console.log(add(myArray));
+
