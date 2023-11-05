@@ -11,3 +11,17 @@ function evenNumbers(num){
 }
 
 evenNumbers(33);
+
+// Reto 3: realizar una función que como parámetro de entrada reciba un array y como salida devuelva el array revertido. No se puede utilizar el método revert
+
+
+function myRevert(myArr:number[]): number[]{
+    let reversedArray: number [] = [];
+    for(let i = myArr.length - 1; i >= 0; i --){
+        reversedArray.push(myArr[i])
+    }
+    return reversedArray
+}
+
+console.log(myRevert([2, 5, 14, 23]));
+
