@@ -77,3 +77,16 @@ function continent(country) {
 console.log(continent("Spain"));
 console.log(continent("Chad"));
 console.log(continent("Australia"));
+// RETO 4
+// Realizar una función que te imprima por consola el siguiente mensaje: "El numero es par..." La cabecera de la función será function isEven(number)
+function isEven(number) {
+    var result = "";
+    if (number % 2 == 0) {
+        result = "El numero es par";
+    }
+    else {
+        result = "El número es impar";
+    }
+    return result;
+}
+console.log(isEven(20));
