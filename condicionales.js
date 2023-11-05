@@ -1,4 +1,4 @@
-// RETO 1
+// RETO 1 y 2
 // Realizar una función que dada una fecha de nacimiento (día y mes) te devuelva el signo zodiacal. La cabecera de la función tendrá el aspecto: function zodiac(day, month)
 function zodiac(day, month) {
     var result = "";
@@ -43,3 +43,37 @@ function zodiac(day, month) {
 console.log(zodiac(23, "Marzo"));
 console.log(zodiac(18, "Mayo"));
 console.log(zodiac(21, "Mayo"));
+// Reto 3
+// Realizar un procedimiento que dado el nombre de un país te imprima en qué continente estás (max 5 países por continente). La cabecera tendrá que ser function continent(country)
+var continents = {
+    continentEurope: ["Spain", "France", "Italy", "Germany", "Austria"],
+    continentAmerica: ["Mexico", "Chile", "Argentina", "Canada", "Colombia"],
+    continentAfrica: ["Morocco", "Kenya", "Tunisia", "Senegal", "Nigeria"],
+    continentAsia: ["Thailand", "China", "India", "Japan", "Philippines"],
+    continentOceania: ["Australia", "New Zealand", "Fiyi", "Papua New Guinea", "Samoa"],
+};
+function continent(country) {
+    var result = "";
+    if (continents.continentEurope.includes(country)) {
+        result = "Este país está en Europa";
+    }
+    else if (continents.continentAmerica.includes(country)) {
+        result = "Este país está en América";
+    }
+    else if (continents.continentAsia.includes(country)) {
+        result = "Este país está en Asia";
+    }
+    else if (continents.continentAfrica.includes(country)) {
+        result = "Este país está en África";
+    }
+    else if (continents.continentOceania.includes(country)) {
+        result = "Este país está en Oceania";
+    }
+    else {
+        return "Este país no lo conozco";
+    }
+    return result;
+}
+console.log(continent("Spain"));
+console.log(continent("Chad"));
+console.log(continent("Australia"));
