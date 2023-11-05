@@ -25,3 +25,19 @@ function myRevert(myArr:number[]): number[]{
 
 console.log(myRevert([2, 5, 14, 23]));
 
+// Reto 4: realizar una función que reciba un array de string que contenga nombre de colores y que imprima si el color está en el arcoíris o no. 
+
+
+
+function isRainbow(colors: string) :string{
+    const rainbow = ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
+    for(let i = 0; i < rainbow.length; i ++){
+        if(colors === rainbow[i]){
+            return "Este color está en el arcoíris"
+        }
+    }
+    return "Este color no está en el arcoíris"
+}
+
+console.log(isRainbow("marrón"));
+console.log(isRainbow("azul"));
