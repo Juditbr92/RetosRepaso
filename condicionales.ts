@@ -31,9 +31,9 @@ function zodiac(day: number, month: string): string{
     return result
 }
 
-console.log(zodiac(23, "Marzo"));
-console.log(zodiac(18, "Mayo"));
-console.log(zodiac(21, "Mayo"));
+// console.log(zodiac(23, "Marzo"));
+// console.log(zodiac(18, "Mayo"));
+// console.log(zodiac(21, "Mayo"));
 
 // Reto 3
 // Realizar un procedimiento que dado el nombre de un país te imprima en qué continente estás (max 5 países por continente). La cabecera tendrá que ser function continent(country)
@@ -64,14 +64,14 @@ function continent(country: string) : string{
     return result
 }
 
-console.log(continent("Spain"));
-console.log(continent("Chad"));
-console.log(continent("Australia"));
+// console.log(continent("Spain"));
+// console.log(continent("Chad"));
+// console.log(continent("Australia"));
 
 // RETO 4
 // Realizar una función que te imprima por consola el siguiente mensaje: "El numero es par..." La cabecera de la función será function isEven(number)
 
-function isEven(number:number): string{
+export function isEven(number:number): string{
     let result = "";
     if(number % 2 == 0){
         result ="El numero es par"
@@ -81,4 +81,5 @@ function isEven(number:number): string{
     return result;
 }
 
-console.log(isEven(20));
+// console.log(isEven(20));
+

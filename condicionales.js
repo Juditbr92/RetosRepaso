@@ -1,5 +1,8 @@
+"use strict";
 // RETO 1 y 2
 // Realizar una función que dada una fecha de nacimiento (día y mes) te devuelva el signo zodiacal. La cabecera de la función tendrá el aspecto: function zodiac(day, month)
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 function zodiac(day, month) {
     var result = "";
     if ((day >= 21 && month === "Marzo") || (day <= 19 && month === "Abril")) {
@@ -40,9 +43,9 @@ function zodiac(day, month) {
     }
     return result;
 }
-console.log(zodiac(23, "Marzo"));
-console.log(zodiac(18, "Mayo"));
-console.log(zodiac(21, "Mayo"));
+// console.log(zodiac(23, "Marzo"));
+// console.log(zodiac(18, "Mayo"));
+// console.log(zodiac(21, "Mayo"));
 // Reto 3
 // Realizar un procedimiento que dado el nombre de un país te imprima en qué continente estás (max 5 países por continente). La cabecera tendrá que ser function continent(country)
 var continents = {
@@ -74,9 +77,9 @@ function continent(country) {
     }
     return result;
 }
-console.log(continent("Spain"));
-console.log(continent("Chad"));
-console.log(continent("Australia"));
+// console.log(continent("Spain"));
+// console.log(continent("Chad"));
+// console.log(continent("Australia"));
 // RETO 4
 // Realizar una función que te imprima por consola el siguiente mensaje: "El numero es par..." La cabecera de la función será function isEven(number)
 function isEven(number) {
@@ -89,4 +92,5 @@ function isEven(number) {
     }
     return result;
 }
-console.log(isEven(20));
+exports.isEven = isEven;
+// console.log(isEven(20));

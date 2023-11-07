@@ -10,7 +10,7 @@ function evenNumbers(num){
     console.log(aux);
 }
 
-evenNumbers(33);
+// evenNumbers(33);
 
 // Reto 3: realizar una función que como parámetro de entrada reciba un array y como salida devuelva el array revertido. No se puede utilizar el método revert
 
@@ -23,7 +23,7 @@ function myRevert(myArr:number[]): number[]{
     return reversedArray
 }
 
-console.log(myRevert([2, 5, 14, 23]));
+// console.log(myRevert([2, 5, 14, 23]));
 
 // Reto 4: realizar una función que reciba un array de string que contenga nombre de colores y que imprima si el color está en el arcoíris o no. 
 
@@ -39,21 +39,22 @@ function isRainbow(colors: string) :string{
     return "Este color no está en el arcoíris"
 }
 
-console.log(isRainbow("marrón"));
-console.log(isRainbow("azul"));
+// console.log(isRainbow("marrón"));
+// console.log(isRainbow("azul"));
 
 // Reto 5: realizar una función que devuelva la suma del numero de caracteres de las palabras de un array
 
-let myArray = ["dsakjiou", "jadsygfdhlkd", "ghajksjiohbjk", "haujsdhasbdui"]
+let myWords = ["dsakjiou", "jadsygfdhlkd", "ghajksjiohbjk", "haujsdhasbdui"]
 
 
-function add(myWords): number{
+export function add(myWords: string[]): number{
     let numLetters = 0;
-    for(let i = 0; i < myArray.length; i++){
-    numLetters = numLetters + myArray[i].length
+    for(let i = 0; i < myWords.length; i++){
+    numLetters = numLetters + myWords[i].length
     } 
     return numLetters;
 }
 
-console.log(add(myArray));
+//console.log(add(myWords));
+
 

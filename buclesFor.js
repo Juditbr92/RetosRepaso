@@ -1,4 +1,7 @@
+"use strict";
 // Reto 2: realizar una función que imprima los números impares existentes hasta el número indicado como parámetro de entrada. La cabecera será function evenNumbers(num)
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 var aux = [];
 function evenNumbers(num) {
     for (var i = 0; i < num; i++) {
@@ -8,7 +11,7 @@ function evenNumbers(num) {
     }
     console.log(aux);
 }
-evenNumbers(33);
+// evenNumbers(33);
 // Reto 3: realizar una función que como parámetro de entrada reciba un array y como salida devuelva el array revertido. No se puede utilizar el método revert
 function myRevert(myArr) {
     var reversedArray = [];
@@ -17,7 +20,7 @@ function myRevert(myArr) {
     }
     return reversedArray;
 }
-console.log(myRevert([2, 5, 14, 23]));
+// console.log(myRevert([2, 5, 14, 23]));
 // Reto 4: realizar una función que reciba un array de string que contenga nombre de colores y que imprima si el color está en el arcoíris o no. 
 function isRainbow(colors) {
     var rainbow = ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
@@ -28,15 +31,16 @@ function isRainbow(colors) {
     }
     return "Este color no está en el arcoíris";
 }
-console.log(isRainbow("marrón"));
-console.log(isRainbow("azul"));
+// console.log(isRainbow("marrón"));
+// console.log(isRainbow("azul"));
 // Reto 5: realizar una función que devuelva la suma del numero de caracteres de las palabras de un array
-var myArray = ["dsakjiou", "jadsygfdhlkd", "ghajksjiohbjk", "haujsdhasbdui"];
+var myWords = ["dsakjiou", "jadsygfdhlkd", "ghajksjiohbjk", "haujsdhasbdui"];
 function add(myWords) {
     var numLetters = 0;
-    for (var i = 0; i < myArray.length; i++) {
-        numLetters = numLetters + myArray[i].length;
+    for (var i = 0; i < myWords.length; i++) {
+        numLetters = numLetters + myWords[i].length;
     }
     return numLetters;
 }
-console.log(add(myArray));
+exports.add = add;
+//console.log(add(myWords));
