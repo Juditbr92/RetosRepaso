@@ -7,3 +7,9 @@ myPoint.setX(1);
 myPoint.setY(5);
 
 console.log(myPoint.toString());
+
+console.log(myPoint.distanceToIOrigin());
+let newPoint = new Point(7, 10);
+
+console.log(myPoint.calculateDistance(newPoint));
+

@@ -28,6 +28,18 @@ export class Point {
     toString():string{
         return `(${this.x}, ${this.y})`
     }
+
+    distanceToIOrigin():number{
+        let newX = (this.x - 0) ** 2;
+        let newY = (this.y - 0) ** 2;        
+        return Math.sqrt(newX + newY)
+    }
+
+    calculateDistance(anotherPoint: Point):number{
+        let anotherX = (this.x - anotherPoint.getX()) ** 2;
+        let anotherY = (this.y - anotherPoint.getY()) ** 2;
+        return Math.sqrt(anotherX + anotherY)
+    }
 }
 
 // let coordenadas = new Point(2,0)
