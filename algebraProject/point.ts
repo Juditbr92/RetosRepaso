@@ -40,7 +40,19 @@ export class Point {
         let anotherY = (this.y - anotherPoint.getY()) ** 2;
         return Math.sqrt(anotherX + anotherY)
     }
-}
 
-// let coordenadas = new Point(2,0)
-// console.log(coordenadas.toString());
+    calcularQuadrant():number {
+        if(this.x === 0 || this.y === 0){
+            return 0;
+        } else if(this.x > 0 && this.y > 0){
+            return 1;
+        } else if(this.x < 0 && this.y > 0){
+            return 2;
+        } else if(this.x < 0 && this.y < 0){
+            return 3
+        } else{
+            return 4
+        }
+    } 
+    
+}

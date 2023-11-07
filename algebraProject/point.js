@@ -32,8 +32,23 @@ var Point = /** @class */ (function () {
         var anotherY = Math.pow((this.y - anotherPoint.getY()), 2);
         return Math.sqrt(anotherX + anotherY);
     };
+    Point.prototype.calcularQuadrant = function () {
+        if (this.x === 0 || this.y === 0) {
+            return 0;
+        }
+        else if (this.x > 0 && this.y > 0) {
+            return 1;
+        }
+        else if (this.x < 0 && this.y > 0) {
+            return 2;
+        }
+        else if (this.x < 0 && this.y < 0) {
+            return 3;
+        }
+        else {
+            return 4;
+        }
+    };
     return Point;
 }());
 exports.Point = Point;
-// let coordenadas = new Point(2,0)
-// console.log(coordenadas.toString());
