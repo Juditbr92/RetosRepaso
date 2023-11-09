@@ -1,5 +1,7 @@
 // Reto 1: clase point con Typescript 
 
+import { get } from "http";
+
 export class Point {
     private x:number
     private y:number
@@ -54,5 +56,17 @@ export class Point {
             return 4
         }
     } 
-    
-}
+
+    calculateNearest(points: Point[]): Point| null{
+        let smallestDistance = 1000;
+        let closestPoint :Point |null = null
+        for(let i = 0; i < points.length; i++){
+            let distance = this.calculateDistance(points[i])
+            if(distance < smallestDistance){
+                smallestDistance = distance;
+                closestPoint = points[i];
+            }
+        } return closestPoint;
+    }
+} 
+

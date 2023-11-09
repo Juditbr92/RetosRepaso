@@ -15,3 +15,7 @@ console.log(myPoint.calculateDistance(newPoint));
 
 console.log(myPoint.calcularQuadrant());
 
+// Reto 4
+let points = [new Point (1,-4), new Point(4,2), new Point (-1, 16)]
+let original = new Point (7,10)
+console.log(original.calculateNearest(points));
